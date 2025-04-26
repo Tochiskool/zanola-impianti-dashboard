@@ -1,6 +1,9 @@
 :root {
   --mainBackground: #19162c;
   --appBackground: #121026;
+  --styleColor: #8c8a95;
+  --hoverColor: #c01c22;
+  --hoverFont: #53eded;
 }
 
 * {

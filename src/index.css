@@ -1,0 +1,10 @@
+:root {
+  --mainBackground: #19162c;
+  --appBackground: #121026;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

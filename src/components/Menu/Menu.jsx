@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../images/zanola.png";
+
 import {
   FaDelicious,
   FaShoppingCart,
@@ -26,7 +26,7 @@ const Menu = () => {
   const lastMenu = [{ icon: FaCog }, { icon: FaSignOutAlt }];
   return (
     <menu>
-      <img src={Logo} alt='Main logo' />
+      <img src='/images/zanola.png' alt='Main logo' />
       <ul id='mainMenu'>
         {menuItems.map((item, index) => (
           <li

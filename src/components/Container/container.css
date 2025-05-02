@@ -92,7 +92,9 @@
   font-size: 12px;
   margin: 0px 10px;
 }
-
+.topContainer .profileContainer .menuChevron:hover {
+  transition: transform 0.5s ease;
+}
 .topContainer .profileContainer .menuContainer {
   position: absolute;
   top: 50px;
@@ -132,4 +134,18 @@
   background-color: var(--appBackground);
   color: var(--textColor);
   transition: 0.3s;
+}
+
+@media screen and (max-width: 525px) {
+  .container {
+    width: calc(100% - 68px);
+  }
+  .topContainer .inputBox {
+    width: 120px;
+    z-index: 101;
+  }
+  .topContainer .inputBox input:focus {
+    width: 320px;
+    transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+  }
 }

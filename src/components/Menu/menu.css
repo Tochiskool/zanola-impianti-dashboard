@@ -39,7 +39,7 @@ menu ul li a:before {
   left: -10px;
   width: 0px;
   height: 20px;
-  background: var(--hoverColor);
+  background: var(--background);
   border-radius: 50%;
 }
 menu ul li a:hover {
@@ -50,7 +50,7 @@ menu ul li:hover a::before {
   transition: all 0.3s;
 }
 menu ul li.active a {
-  color: var(--hoverColor);
+  color: var(--background);
 }
 menu ul li.active a::before {
   width: 20px;

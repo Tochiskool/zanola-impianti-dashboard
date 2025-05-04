@@ -1,6 +1,40 @@
 import React from "react";
+import CardMain from "../CardMain/CardMain.jsx";
 import "./mainContainer.css";
 const MainContainer = () => {
+  const cardData = [
+    {
+      image: "/images/card1.jpg",
+      title: "Digital Dreams",
+      hearts: 120,
+    },
+    {
+      image: "/images/card2.jpg",
+      title: "Urban Waves",
+      hearts: 98,
+    },
+    {
+      image: "/images/card3.jpg",
+      title: "Fantasy Land",
+      hearts: 143,
+    },
+    {
+      image: "/images/card4.jpg",
+      title: "Retro Vision",
+      hearts: 76,
+    },
+    {
+      image: "/images/card5.jpg",
+      title: "Ocean Escape",
+      hearts: 65,
+    },
+    {
+      image: "/images/card6.jpg",
+      title: "Sky Light",
+      hearts: 88,
+    },
+  ];
+
   return (
     <div className='mainContainer'>
       <div className='left'>
@@ -18,6 +52,33 @@ const MainContainer = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className='cards'>
+          <div className='filters'>
+            <div className='popular'>
+              <h2>Feed</h2>
+              <a href='#' className='button2'>
+                Popular
+              </a>
+            </div>
+            <div className='filter_buttons'>
+              <a href='' className='button1'>
+                All
+              </a>
+              <a href='#' className='button2'>
+                Illustrazione
+              </a>
+              <a href='#' className='button2'>
+                Arte
+              </a>
+              <a href='#' className='button2'>
+                Giocchi
+              </a>
+            </div>
+          </div>
+          <main>
+            <CardMain cardData={cardData} />
+          </main>
         </div>
       </div>
       <div className='right'>Right</div>

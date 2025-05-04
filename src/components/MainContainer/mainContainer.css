@@ -76,6 +76,40 @@
   display: block;
   color: var(--btnColor);
 }
+/* Cards */
+.mainContainer .left .cards {
+  background-color: var(--mainBackground);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.mainContainer .left .cards .filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+.mainContainer .left .cards .filters .popular {
+  display: flex;
+  align-items: center;
+}
+.mainContainer .left .cards .filters .popular h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--textColor);
+  margin-right: 10px;
+}
+.button2 {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--textColor);
+  border: 2px solid #443b78;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  margin: 0px 5px;
+}
 .mainContainer .right {
   width: calc(100% - 70%);
 }

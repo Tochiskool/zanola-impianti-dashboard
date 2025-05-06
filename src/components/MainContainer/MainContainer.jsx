@@ -83,7 +83,7 @@ const MainContainer = () => {
           <CardMain cardData={cardData} />
         </main>
       </div>
-      <div className='right'>Right</div>
+      <div className='right'>Designing starts in 24 hours</div>
     </div>
   );
 };

@@ -21,6 +21,57 @@
   display: block;
 }
 
+.card_main_name .firstLine {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+.card_main_name .firstLine h2 {
+  color: #e9e9ec;
+  font-size: 16px;
+  font-weight: bold;
+}
+.card_main_name .firstLine .card_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.card_main_name .firstLine .card_icon i {
+  color: var(--btnColor);
+}
+.card_main_name .firstLine .card_icon span {
+  color: var(--textColor);
+  text-shadow: 3px 5px 20px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.card_main_name .stats {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  gap: 0.5rem;
+}
+.card_main_name .stats p:first-child,
+.card_main_name .stats p:nth-child(3) {
+  font-weight: bold;
+  color: var(--btnColor);
+}
+
+.card_main_name .stats p span {
+  display: block;
+  color: var(--placeHolders);
+}
+.stats .divider {
+  margin: 0 10px;
+  color: var(--textColor);
+}
+.card_main_name .card_button {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0.7rem;
+}
 /* Responsive behavior: multi-column on larger screens */
 @media screen and (min-width: 768px) {
   .card {

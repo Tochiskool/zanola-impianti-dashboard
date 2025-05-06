@@ -18,8 +18,7 @@
 html,
 body {
   height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: auto;
 }
 .button1 {
   text-decoration: none;
@@ -34,4 +33,9 @@ body {
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.4),
     inset -5px -10px 10px var(--btnColor);
   cursor: pointer;
+}
+.button1,
+.button2 {
+  white-space: nowrap;
+  flex-shrink: 0;
 }

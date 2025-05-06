@@ -1,27 +1,29 @@
 import React from "react";
 import CardMain from "../CardMain/CardMain.jsx";
+
+import { FaBars } from "react-icons/fa";
 import "./mainContainer.css";
 const MainContainer = () => {
   const cardData = [
     {
       image: "/images/card1.jpg",
       title: "Digital Dreams",
-      hearts: 120,
+      hearts: 65,
     },
     {
       image: "/images/card2.jpg",
       title: "Urban Waves",
-      hearts: 98,
+      hearts: 65,
     },
     {
       image: "/images/card3.jpg",
       title: "Fantasy Land",
-      hearts: 143,
+      hearts: 65,
     },
     {
       image: "/images/card4.jpg",
       title: "Retro Vision",
-      hearts: 76,
+      hearts: 65,
     },
     {
       image: "/images/card5.jpg",
@@ -31,7 +33,7 @@ const MainContainer = () => {
     {
       image: "/images/card6.jpg",
       title: "Sky Light",
-      hearts: 88,
+      hearts: 65,
     },
   ];
 
@@ -76,10 +78,10 @@ const MainContainer = () => {
               </a>
             </div>
           </div>
-          <main>
-            <CardMain cardData={cardData} />
-          </main>
         </div>
+        <main>
+          <CardMain cardData={cardData} />
+        </main>
       </div>
       <div className='right'>Right</div>
     </div>

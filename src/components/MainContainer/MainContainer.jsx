@@ -1,7 +1,5 @@
 import React from "react";
 import CardMain from "../CardMain/CardMain.jsx";
-
-import { FaBars } from "react-icons/fa";
 import "./mainContainer.css";
 const MainContainer = () => {
   const cardData = [
@@ -13,27 +11,27 @@ const MainContainer = () => {
     {
       image: "/images/card2.jpg",
       title: "Urban Waves",
-      hearts: 65,
+      hearts: 75,
     },
     {
       image: "/images/card3.jpg",
       title: "Fantasy Land",
-      hearts: 65,
+      hearts: 50,
     },
     {
       image: "/images/card4.jpg",
       title: "Retro Vision",
-      hearts: 65,
+      hearts: 95,
     },
     {
       image: "/images/card5.jpg",
       title: "Ocean Escape",
-      hearts: 65,
+      hearts: 80,
     },
     {
       image: "/images/card6.jpg",
       title: "Sky Light",
-      hearts: 65,
+      hearts: 60,
     },
   ];
 
@@ -78,10 +76,10 @@ const MainContainer = () => {
               </a>
             </div>
           </div>
+          <main>
+            <CardMain cardData={cardData} />
+          </main>
         </div>
-        <main>
-          <CardMain cardData={cardData} />
-        </main>
       </div>
       <div className='right'>Right</div>
     </div>

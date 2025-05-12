@@ -1,12 +1,15 @@
 .mainContainer {
   width: 100%;
-  height: calc(100%-45px);
+  min-height: 100vh;
   display: flex;
+  flex-direction: row;
   padding-top: 15px;
+  box-sizing: border-box;
 }
 .mainContainer .left {
   width: calc(100% - 30%);
   overflow-y: scroll;
+  overflow-y: visible;
   transition: all 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
 }
 .mainContainer .left::-webkit-scrollbar {
@@ -109,6 +112,81 @@
   border-radius: 0.5rem;
   padding: 0.3rem 0.8rem;
   margin: 0px 5px;
+}
+
+/* CardMain */
+.mainContainer .left .cards main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mainContainer .left .cards main .card_main {
+  background: var(--newBackground);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 260px;
+  padding-bottom: 20px;
+  margin: 15px 10px;
+}
+.mainContainer .left .cards main .card_main img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.mainContainer .left .cards main .card_main .card_main_name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin-top: 10px;
+}
+.mainContainer .left .cards main .card_main .card_main_name h2 {
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: bold;
+}
+.mainContainer .left .cards main .card_main .card_main_name .card_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainContainer .left .cards main .card_main .card_main_name .card_icon i {
+  color: var(--btnColor);
+  text-shadow: 3px 5px 20px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+.mainContainer .left .cards main .card_main .card_main_name .card_icon i span {
+  color: var(--textColor);
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+/* stats */
+.stats {
+  columns: 2;
+  column-rule: 1px solid var(--styleColor);
+  text-align: center;
+  gap: 1rem;
+  margin: 15px 0;
+}
+.stats p {
+  color: var(--textColor);
+  font-weight: bold;
+  font-size: 12px;
+}
+.stats p span {
+  display: block;
+  color: var(--btnColor);
+  font-size: 12px;
+}
+.card_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 15px;
+}
+.card_button btn {
+  font-size: 10px;
 }
 .mainContainer .right {
   width: calc(100% - 70%);

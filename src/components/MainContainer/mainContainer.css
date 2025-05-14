@@ -131,6 +131,7 @@
 }
 .mainContainer .left .cards main .card_main img {
   max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 .mainContainer .left .cards main .card_main .card_main_name {

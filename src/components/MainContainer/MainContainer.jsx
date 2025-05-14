@@ -1,6 +1,8 @@
 import React from "react";
 import CardMain from "../CardMain/CardMain.jsx";
 import "./mainContainer.css";
+import MainRightTop from "../MainRightTop/MainRightTop.jsx";
+import MainRIghtBottom from "../MainRightBottom/MainRIghtBottom.jsx";
 const MainContainer = () => {
   const cardData = [
     {
@@ -81,7 +83,10 @@ const MainContainer = () => {
           </main>
         </div>
       </div>
-      <div className='right'>Right</div>
+      <div className='right'>
+        <MainRightTop />
+        <MainRIghtBottom />
+      </div>
     </div>
   );
 };

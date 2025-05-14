@@ -189,6 +189,53 @@
 .card_button btn {
   font-size: 10px;
 }
+
+/* Right side */
 .mainContainer .right {
   width: calc(100% - 70%);
+  padding: 0px 10px;
+  padding-left: 20px;
+  transition: all 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+}
+
+.mainContainer .right .topCard {
+  background-color: var(--mainBackground);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+.mainContainer .right .topCard .topCard_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.mainContainer .right .topCard .topCard_name h2 {
+  color: var(--textColor);
+}
+.mainContainer .right .topCard .topCard_name a {
+  color: var(--btnColor);
+}
+.mainContainer .right .topCard .earnings {
+  width: 100%;
+  padding: 5px 10px;
+}
+.mainContainer .right .topCard .earnings p {
+  display: flex;
+  margin: 8px 0;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: var(--textColor);
+  font-weight: bold;
+}
+.mainContainer .right .topCard .earnings p:nth-child(odd) {
+  background: var(--newBackground);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.mainContainer .right .topCard .earnings p:last-child span {
+  font-size: 14px;
+  color: var(--btnColor);
 }

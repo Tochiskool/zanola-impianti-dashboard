@@ -198,21 +198,25 @@
   transition: all 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
 }
 
-.mainContainer .right .topCard {
+.mainContainer .right .topCard,
+.mainContainer .right .bottomRightCard {
   background-color: var(--mainBackground);
   border-radius: 0.5rem;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
 }
-.mainContainer .right .topCard .topCard_name {
+.mainContainer .right .topCard .topCard_name,
+.mainContainer .right .bottomRightCard .bottomName {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
 }
-.mainContainer .right .topCard .topCard_name h2 {
+.mainContainer .right .topCard .topCard_name h2,
+.mainContainer .right .bottomRightCard .bottomName h2 {
   color: var(--textColor);
 }
-.mainContainer .right .topCard .topCard_name a {
+.mainContainer .right .topCard .topCard_name a,
+.mainContainer .right .bottomRightCard .bottomName a {
   color: var(--btnColor);
 }
 .mainContainer .right .topCard .earnings {
@@ -238,4 +242,40 @@
 .mainContainer .right .topCard .earnings p:last-child span {
   font-size: 14px;
   color: var(--btnColor);
+}
+/* Bottom Right */
+.mainContainer .right .bottomRightCard {
+  margin-top: 15px;
+}
+
+.mainContainer .right .bottomRightCard .topSeller {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.mainContainer .right .bottomRightCard .topSeller .topSellerImg {
+  width: 45px;
+  height: 45px;
+  background: #252041;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.mainContainer .right .bottomRightCard .topSeller .topSellerImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mainContainer .right .bottomRightCard .topSeller .topSellerName {
+  font-size: 14px;
+  color: var(--textColor);
+  font-weight: bold;
+  margin-left: 10px;
+}
+.mainContainer .right .bottomRightCard .topSeller .topSellerName span {
+  display: block;
+  font-size: 12px;
+}
+.mainContainer .right .bottomRightCard .topSeller .btn {
+  font-size: 10px;
+  margin-left: auto;
 }

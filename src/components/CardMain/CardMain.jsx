@@ -20,7 +20,7 @@ const CardMain = ({ cardData }) => {
             <p>
               Current Bid <span>1.2 ETH</span>
             </p>
-            <span className='divider'>|</span>
+            <span className='divider'></span>
             <p>
               Ending In <span> 1d:12h ETH</span>
             </p>

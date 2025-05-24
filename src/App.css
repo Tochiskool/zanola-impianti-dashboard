@@ -3,5 +3,14 @@
   width: 100%;
   height: 100vh;
   background-color: var(--appBackground);
-  overflow: hidden;
+  overflow-x: hidden;
+}
+.App::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 525px) {
+  .App {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
 }

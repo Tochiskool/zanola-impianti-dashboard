@@ -195,6 +195,11 @@
   width: calc(100% - 70%);
   padding: 0px 10px;
   padding-left: 20px;
+  padding-left: 20px;
+  position: sticky;
+  top: 15px; /* or whatever top offset you want */
+  align-self: flex-start; /* Ensure it doesn't stretch with flex */
+  height: fit-content; /* Let it wrap content if needed */
   transition: all 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
 }
 
@@ -278,4 +283,68 @@
 .mainContainer .right .bottomRightCard .topSeller .btn {
   font-size: 10px;
   margin-left: auto;
+}
+
+@media screen and (max-width: 525px) {
+  .mainContainer {
+    flex-direction: column;
+    height: auto;
+  }
+  /* Main Left */
+  .mainContainer .left {
+    width: 100%;
+  }
+  .mainContainer .left .banner .textContainer h1 {
+    font-size: 1.75em;
+  }
+  .mainContainer .left .banner .textContainer h2 {
+    font-size: 1em;
+  }
+  .mainContainer .left .cards .filters .filter_buttons {
+    display: none;
+  }
+  .mainContainer .left .cards main .card_main {
+    max-width: 400px;
+  }
+  /* Main right */
+  .mainContainer .right {
+    width: 100%;
+    padding: unset;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 525px) and (max-width: 950px) {
+  .mainContainer {
+    height: calc(100% - 25px);
+  }
+  .mainContainer .left {
+    width: calc(100% - 35%);
+  }
+  .mainContainer .right {
+    width: calc(100% - 65%);
+  }
+  .mainContainer .left .cards main .card_main {
+    max-width: 230px;
+    margin: 20px 5px;
+  }
+  .mainContainer .left .cards .filters {
+    padding: 0;
+  }
+
+  .mainContainer .right .topCard .earnings {
+    padding: 0;
+  }
+  .maincontainer .right .bottom_card .topSeller .topSellerImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .maincontainer .right .bottom_card .topSeller {
+    margin: 20px 0;
+  }
+
+  .maincontainer .right .bottom_card .topSeller .button {
+    font-size: 8px;
+  }
 }
